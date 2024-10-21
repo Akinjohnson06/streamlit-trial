@@ -11,7 +11,7 @@ import streamlit as st
 import warnings
 warnings.filterwarnings('ignore')
 
-model = pickle.load(open("C:/Users/AKIN-JOHNSON/school_record.pkl", "rb"))
+model = pickle.load(open("school_record.pkl", "rb"))
 
 # creating a funtion for prediction
 def record_prediction(input_data):
