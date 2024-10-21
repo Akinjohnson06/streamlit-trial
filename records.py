@@ -6,12 +6,12 @@ Created on Sun Oct 20 23:06:59 2024
 """
 
 import numpy as np
-import joblib
+import pickle
 import streamlit as st
 import warnings
 warnings.filterwarnings('ignore')
 
-model = joblib.load("C:/Users/AKIN-JOHNSON/school_record.joblib")
+model = pickle.load(open("C:/Users/AKIN-JOHNSON/school_record.pkl", "rb"))
 
 # creating a funtion for prediction
 def record_prediction(input_data):
